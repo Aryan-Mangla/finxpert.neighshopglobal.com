@@ -1,0 +1,93 @@
+.cta-section {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(145deg, var(--navy) 0%, var(--navy-light) 60%, #1F5099 100%);
+  overflow: hidden;
+  text-align: center;
+}
+.cta-bg { position: absolute; inset: 0; pointer-events: none; }
+.cta-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+.cta-blob-1 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(255,107,43,0.25) 0%, transparent 70%);
+  top: -150px; right: -100px;
+}
+.cta-blob-2 {
+  width: 380px; height: 380px;
+  background: radial-gradient(circle, rgba(255,107,43,0.15) 0%, transparent 70%);
+  bottom: -100px; left: -80px;
+}
+.cta-dots {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.cta-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+.cta-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+}
+.cta-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: white;
+  line-height: 1.12;
+  margin-bottom: 20px;
+}
+.cta-heading-accent {
+  background: linear-gradient(135deg, var(--orange) 0%, #FFB085 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.cta-subtext {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.cta-primary-btn {
+  padding: 16px 36px;
+  font-size: 1rem;
+  background: var(--orange);
+  box-shadow: 0 8px 32px rgba(255,107,43,0.4);
+}
+.cta-primary-btn:hover {
+  background: var(--orange-light);
+  box-shadow: 0 14px 40px rgba(255,107,43,0.5);
+}
+.cta-note {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.45);
+}
+@media (max-width: 480px) {
+  .cta-section { padding: 72px 0; }
+  .cta-actions { flex-direction: column; align-items: center; }
+}
